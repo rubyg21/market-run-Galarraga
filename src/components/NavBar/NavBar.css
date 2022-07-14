@@ -1,0 +1,28 @@
+.NavBar{
+    color: white;
+    text-align: center;
+    
+}
+
+.NavBar_boton{
+    font-size: 1.5rem;
+    padding: 10px;
+    display: inline-flex;
+    cursor: pointer;
+    border:none;
+    margin: 0 0 0 1rem;
+    color: gray;
+    
+}
+
+.NavBar_boton:hover{
+    /* transition: color 0.9s ease; */
+    color: black;
+    border-bottom: 2px solid rgb(0, 0, 0)
+}
+
+@media (max-width: 600px) {
+    .NavBar_boton {
+      display: flex;
+    }
+  }
