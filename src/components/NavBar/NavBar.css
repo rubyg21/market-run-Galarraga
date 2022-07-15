@@ -1,26 +1,48 @@
 .NavBar{
-    color: white;
     text-align: center;
+    background-color: white;
+    display: center;
     
 }
 
 .NavBar_boton{
     font-size: 1.5rem;
-    padding: 10px;
+    padding: 8px;
     display: inline-flex;
+    /* float: center; */
     cursor: pointer;
-    border:none;
-    margin: 0 0 0 1rem;
+    border:2px white;
+    background-color: white;
+    text-align: center;
+    margin:  0   0  0 1rem;
     color: gray;
     
 }
 
-.NavBar_boton:hover{
-    /* transition: color 0.9s ease; */
-    color: black;
-    border-bottom: 2px solid rgb(0, 0, 0)
+.NavBar_boton_lef{
+
+    font-size: 1rem;
+    padding: auto;
+    float: right;
+    cursor: pointer;
+    border:2px white;
+    /* margin:  0   0  0 1rem; */
+    margin: auto;
+    background-color: white;
+    color: gray;
+
 }
 
+.NavBar_boton:hover{
+    /* transition: color 0.3s ease; */
+   /* border-bottom: 2px solid rgb(0, 0, 0); */
+    color: black;
+}
+.NavBar_boton_lef:hover{
+    /* transition: color 0.3s ease; */
+   /* border-bottom: 2px solid rgb(0, 0, 0); */
+    color: black;
+}
 @media (max-width: 600px) {
     .NavBar_boton {
       display: flex;

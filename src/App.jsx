@@ -9,10 +9,8 @@ function App() {
 
   return (
     <div className="App">
-      <p> Tienda de articulos de running...</p>
-      <NavBar />   
-       
 
+      <NavBar />   
 
     </div>
   )
