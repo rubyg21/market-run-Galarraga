@@ -1,13 +1,12 @@
 import React from 'react'
+import  "./ItemListContainer.css";
 
 function ItemListContainer(props) {
   return (
     <>
-    
-    <h1>Aqui tendremos el listado de {props.greeting}
-    
-     </h1>
-    
+
+    <div className="ItemList" >Texto provisorio...Aqui tendremos el listado de {props.greeting} de la tienda... </div>
+
     </>
   )
 }

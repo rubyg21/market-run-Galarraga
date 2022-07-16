@@ -9,12 +9,11 @@ function NavBar() {
 <ul className="topnav">
   <CartWidget />
   <li><a>LOGO</a></li>
-  <li><a href="#home">Inicio</a></li>
-  <li><a href="#news">Tienda</a></li>
-  <li><a href="#contact">Contacto</a></li>
-  <li className="right"><a href="#about">Unete</a></li>
-  <li className="right"><a href="#about">Iniciar sesion</a></li>
-
+  <li><a href="#inicio">Inicio</a></li>
+  <li><a href="#tienda">Tienda</a></li>
+  <li><a href="#contacto">Contacto</a></li>
+  <li className="right"><a href="#sesion">Iniciar sesion</a></li>
+  <li className="right"><a href="#unete">Unete</a></li>
 </ul>
 
  </>

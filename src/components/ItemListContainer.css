@@ -1,0 +1,15 @@
+.ItemList{
+    /* max-width: 100%;
+    height: 400px; */
+    /* background-image: url("https://tn.com.ar/resizer/pCs1biHlkWBnD02cewgxDt3mOw4=/1440x0/smart/cloudfront-us-east-1.images.arcpublishing.com/artear/3J5QWF3JDNC2LLXUQ4ATSH5VJI.jpg"); */
+    font-size: 2.5rem;
+    color: black;
+  
+
+}
+
+.ItemList:hover{
+
+    color: #0087FF;
+
+}
