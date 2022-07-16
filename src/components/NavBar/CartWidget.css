@@ -1,0 +1,11 @@
+.Carrito{
+    float: right;
+    cursor: pointer;
+    color: white;
+    margin: 5px;
+          
+}
+
+.Carrito:hover{
+    color: #0087FF;
+}

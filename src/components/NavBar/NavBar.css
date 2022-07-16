@@ -1,50 +1,45 @@
-.NavBar{
-    text-align: center;
-    background-color: white;
-    display: center;
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(0, 0, 0);
+    border-bottom: solid 2px  gray;
     
-}
-
-.NavBar_boton{
-    font-size: 1.5rem;
-    padding: 8px;
-    display: inline-flex;
-    /* float: center; */
-    cursor: pointer;
-    border:2px white;
-    background-color: white;
+  }
+  
+  ul.topnav li {float: left;}
+  
+  ul.topnav li a {
+    display: block;
+    color: rgb(255, 255, 255);
     text-align: center;
-    margin:  0   0  0 1rem;
-    color: gray;
+    padding: 14px 16px;
+    text-decoration: none;
+     
+  }
+  
+  ul.topnav li a:hover:not(.active) {
     
+    background-color: rgb(0, 0, 0);
+    color: #0087FF;
+ 
+  
+   
 }
-
-.NavBar_boton_lef{
-
-    font-size: 1rem;
-    padding: auto;
+  
+  
+  ul.topnav li.right {
+        
     float: right;
-    cursor: pointer;
-    border:2px white;
-    /* margin:  0   0  0 1rem; */
-    margin: auto;
-    background-color: white;
-    color: gray;
-
+    
 }
-
-.NavBar_boton:hover{
-    /* transition: color 0.3s ease; */
-   /* border-bottom: 2px solid rgb(0, 0, 0); */
-    color: black;
-}
-.NavBar_boton_lef:hover{
-    /* transition: color 0.3s ease; */
-   /* border-bottom: 2px solid rgb(0, 0, 0); */
-    color: black;
-}
-@media (max-width: 600px) {
-    .NavBar_boton {
-      display: flex;
+  
+  
+  @media screen and (max-width: 600px) {
+    ul.topnav li.right, 
+    ul.topnav li {float: none;}
+    ul.topnav li.right{
+        border-bottom: 2px coral;
     }
   }

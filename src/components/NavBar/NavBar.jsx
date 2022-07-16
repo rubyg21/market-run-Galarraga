@@ -1,19 +1,23 @@
 import React from 'react'
 import './NavBar.css'
+import CartWidget from './CartWidget'
 
 function NavBar() {
   return (
-    <div className='NavBar'>
-        <div>Tienda de articulos de running...
-        <button className='NavBar_boton_lef'>Login</button>
-        <button className='NavBar_boton_lef'>Unete</button>
-        </div>
-        <button className='NavBar_boton'>Inicio</button>
-        <button className='NavBar_boton'>Tienda</button>
-        <button className='NavBar_boton'>Nosotros</button>
-        <button className='NavBar_boton'>Contacto</button>
-    
-    </div>
+<>   
+
+<ul className="topnav">
+  <CartWidget />
+  <li><a>LOGO</a></li>
+  <li><a href="#home">Inicio</a></li>
+  <li><a href="#news">Tienda</a></li>
+  <li><a href="#contact">Contacto</a></li>
+  <li className="right"><a href="#about">Unete</a></li>
+  <li className="right"><a href="#about">Iniciar sesion</a></li>
+
+</ul>
+
+ </>
   )
 }
 
