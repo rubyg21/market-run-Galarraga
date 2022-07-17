@@ -23,23 +23,18 @@ ul.topnav {
     
     background-color: rgb(0, 0, 0);
     color: #0087FF;
- 
-  
+
    
 }
   
-  
-  ul.topnav li.right {
+ul.topnav li.right {
         
     float: right;
     
 }
-  
-  
+ 
   @media screen and (max-width: 600px) {
     ul.topnav li.right, 
     ul.topnav li {float: none;}
-    ul.topnav li.right{
-        border-bottom: 2px coral;
-    }
+
   }

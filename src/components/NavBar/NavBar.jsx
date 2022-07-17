@@ -8,7 +8,7 @@ function NavBar() {
 
 <ul className="topnav">
   <CartWidget />
-  <li><a>LOGO</a></li>
+  <li><a>TU LOGO</a></li>
   <li><a href="#inicio">Inicio</a></li>
   <li><a href="#tienda">Tienda</a></li>
   <li><a href="#contacto">Contacto</a></li>
