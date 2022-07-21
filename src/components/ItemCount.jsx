@@ -18,42 +18,22 @@ useEffect(()=>{
 
   return (
 <>
+
 <div className='counter'>  
 <button disabled={count <= 1}  onClick={decrease} > - </button>
 <span> {count} </span>
 <button disabled={count >= stock } onClick={increase}  > + </button>
-
+<br></br>
 <div>
-    <button disabled={stock <= 0} onClick={() => onAdd(count)}  >AGREGAR AL CARRITO</button>
+<br></br>
+    <button className='agregar' disabled={stock <= 0} onClick={() => onAdd(count)}  >Agregar al carrito</button>
 </div>
 </div>
-</>
 
-    
+</>
+   
   )
 }
 
 export default ItemCount
 
-// import React,{useState} from 'react'
-
-// function ItemCount() {
-//     const [counter, setCounter] = useState(0)
-//   return (
-// <>
-// <div> {counter} </div>
-// <button onClick={() => setCounter( counter +1) } > +</button>
-// <button onClick={() => setCounter( counter -1)  } > -</button>
-// <button onClick={() => setCounter(0) } > Reset </button>
-
-// </>
-
-
-    
-//   )
-// }
-
-// export default ItemCount
-
-
-// https://www.youtube.com/watch?v=g8NwvWZtpq0

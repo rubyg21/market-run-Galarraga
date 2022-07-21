@@ -1,7 +1,53 @@
+
+
+
+
 .counter{
+
   width: fit-content;
-  background-color: rgb(70, 181, 255);
   margin: auto;
   padding: 1rem;
   text-align: center;
+  border: 1px solid rgb(102, 102, 102); 
+  border-radius: 3px;
 }
+
+button {
+
+  background-color: #ffffff; /* Green */
+  border: none;
+  color: rgb(0, 0, 0);
+  padding: 10px 15px ;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  border: 1px solid rgb(102, 102, 102); 
+  border-radius: 3px;
+  
+}
+.agregar{
+
+  border: none;
+  color: rgb(0, 103, 151);
+  padding: 10px 35px ;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  border: 1px solid rgb(102, 102, 102); 
+  border-radius: 3px;
+}
+
+
+button {
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+
+
+button:hover {
+  background-color: #0065d8; /* Green */
+  color: white;
+}
+
