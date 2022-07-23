@@ -18,7 +18,6 @@ const productos = [
 
 ]
 
-
 function ItemListContainer({greeting}) {
 
   const [data, setData] = useState([])
@@ -41,12 +40,11 @@ function ItemListContainer({greeting}) {
   return (
     <>
     <div className="ItemList" >{greeting='Bienvenido'} aqui el listado de nuestros productos...  </div>
-   
-   
+      
     {/* listado de productos resposive */}
     <div className='container'> 
 
-    <ItemCount initial={1} stock={10} onAdd={onAdd} />  
+    <ItemCount initial={1} stock={10} onAdd={onAdd} /> 
     <ItemList  data={data} />
 
     </div>
