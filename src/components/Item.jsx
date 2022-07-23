@@ -8,9 +8,8 @@ const Item = ({info} ) =>{
    
         <a href='' className='item'>
 
-        <img src={info.pictureUrl} 
-        alt=''  />
-         <p>  {info.title}  {info.pirce} </p> 
+        <img src={info.pictureUrl}  alt=''  />
+        <p>  {info.title}  {info.pirce} </p> 
           <p>  {info.description}</p>
    
         </a> 
