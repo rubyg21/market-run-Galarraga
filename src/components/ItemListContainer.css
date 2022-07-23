@@ -4,16 +4,15 @@
     /* background-image: url("https://tn.com.ar/resizer/pCs1biHlkWBnD02cewgxDt3mOw4=/1440x0/smart/cloudfront-us-east-1.images.arcpublishing.com/artear/3J5QWF3JDNC2LLXUQ4ATSH5VJI.jpg"); */
     font-size: 2.5rem;
     color: black;
-  
-  
+
 
 }
 
 .container{
     display: grid;
     grid-template-columns: repeat(auto-fill, 230px);
-    gap: 40px;
-    padding: 40px;
+    gap: 30px;
+    padding: 30px;
     justify-content: center;
     
 
@@ -31,7 +30,7 @@
 @media only screen and (max-width: 600px) {
     .container{
 
-        gap: 75px;
+        gap: 50px;
         padding: 40px;
         justify-content: center;
    
