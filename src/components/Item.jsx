@@ -10,11 +10,10 @@ const Item = ({info} ) =>{
 
         <img src={info.pictureUrl}  alt=''  />
         <p>  {info.title}  {info.pirce} </p> 
-          <p>  {info.description}</p>
+        <p>  {info.description}</p>
    
         </a> 
-           
-    
+               
     )
 }
 
