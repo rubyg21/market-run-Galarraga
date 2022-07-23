@@ -1,33 +1,14 @@
-
-
-.film {
+.item {
     display: block;
-    width: 200px;
+    width: 250px;
+    color: #0065d8;
+    
 }
 
-
-.film img {
-
+.item img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+   
 }
 
-
-/* .film {
- color: blue;
-    margin: auto;
-    justify-content: center;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, 230px);
-    border-radius: 2px black;
-
-
-}
-
-
-.img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-} */

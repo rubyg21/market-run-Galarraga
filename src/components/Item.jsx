@@ -5,17 +5,17 @@ import './item.css';
 const Item = ({info} ) =>{
 
     return(
-      
-        <a href='' className='film'>
+   
+        <a href='' className='item'>
 
         <img src={info.image} 
         alt=''  />
-        <p> {info.title}  </p> 
-        <p>  {info.precio} </p>
-        <p> Detalles del Producto </p>
-            
+         <p>  {info.title}  {info.precio} </p> 
+          <p>  {info.descripcion}</p>
+   
         </a> 
-     
+           
+    
     )
 }
 
