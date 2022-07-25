@@ -3,6 +3,7 @@ import  "./ItemListContainer.css";
 import  ItemCount from './ItemCount' 
 import ItemList from './ItemList'
 import { useState, useEffect } from 'react';
+import Spinner from './Spinner/Spinner'
 
 
 const productos = [
@@ -27,7 +28,7 @@ function ItemListContainer({greeting}) {
     const getData = new Promise((resolve) => {
       setTimeout(()=>{
         resolve(productos)
-      },2000)
+      },3000)
     })
     getData.then(res => setData(res))
 
@@ -45,7 +46,9 @@ function ItemListContainer({greeting}) {
     <div className='container'> 
 
     <ItemCount initial={1} stock={10} onAdd={onAdd} /> 
-    <ItemList  data={data} />
+
+    {data.length === 0 ? ( <Spinner /> ) : (  <ItemList  data={data} /> ) }
+   
 
     </div>
   </>
