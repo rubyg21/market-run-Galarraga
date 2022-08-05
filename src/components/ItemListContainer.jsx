@@ -11,16 +11,16 @@ import { useParams } from 'react-router-dom'
 const productos = [
 
   {id : 1, pictureUrl :"https://disershop.com.uy/image/cache/catalog/aadiser/productos/EL-135270-30-1000x1000.jpg", title: "Remera",
-  pirce: '$300',  category: 'running', description: 'Ver detalles'},
+  pirce: '$300',  category: 'running', description: 'Ver detalles',stock: 6},
 
   {id : 2, pictureUrl :"https://disershop.com.uy/image/cache/catalog/aadiser/productos/EL-1050-11-1000x1000.jpg", title: "Short",
-  pirce: '$900', category: 'tennis', description: 'Ver detalles'},
+  pirce: '$900', category: 'tennis', description: 'Ver detalles',stock: 6},
 
   {id : 3, pictureUrl :"https://disershop.com.uy/image/cache/catalog/aadiser/productos/EL-25441-02-1000x1000.jpg", title: "Musculosa",
-  pirce: '$600', category: 'running', description: 'Ver detalles'},
+  pirce: '$600', category: 'running', description: 'Ver detalles',stock: 6},
 
   {id : 4, pictureUrl :"https://disershop.com.uy/cache/aadiser/productos/EL-125566-04-550x550.jpg", title: "Camiseta Elite",
-  pirce: '$398', category: 'tennis', description: 'Ver detalles'},
+  pirce: '$398', category: 'tennis', description: 'Ver detalles',stock: 6},
 
 ]
 
@@ -43,7 +43,9 @@ function ItemListContainer({greeting}) {
       getData.then(res => setData(res))
     }
     
-
+ return () =>{
+  setData([])
+ }
   },[categoriaId])
 
 
