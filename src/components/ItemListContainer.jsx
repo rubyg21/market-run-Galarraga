@@ -1,6 +1,6 @@
 import React from 'react'
 import  "./ItemListContainer.css";
-import  ItemCount from './ItemCount' 
+
 import ItemList from './ItemList'
 import { useState, useEffect } from 'react';
 import Spinner from './Spinner/Spinner'
@@ -46,9 +46,7 @@ function ItemListContainer({greeting}) {
 
   },[categoriaId])
 
-  const onAdd = (quantity) =>{
-    console.log(`Compraste ${quantity} unidades `);
-    }
+
 
   return (
     <>
@@ -57,7 +55,7 @@ function ItemListContainer({greeting}) {
     {/* listado de productos resposive */}
     <div className='container'> 
 
-    <ItemCount initial={1} stock={10} onAdd={onAdd} /> 
+  
 
     {data.length === 0 ? ( <Spinner /> ) : (  <ItemList  data={data} /> ) }
    
