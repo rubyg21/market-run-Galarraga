@@ -1,4 +1,5 @@
 import './App.css'
+import React from 'react'
 import NavBar from './components/NavBar/NavBar'
 import ItemListContainer from './components/ItemListContainer'
 import ItemDetailContainer from './components/ItemDetailContainer'
@@ -9,7 +10,7 @@ import Contacto from './components/Contacto'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 
-
+import CartProvider from './context/CartContex'
 
 function App() {
 
@@ -17,8 +18,10 @@ function App() {
     <> 
 <BrowserRouter>  
 
-      <NavBar />   
 
+<CartProvider> 
+  
+<NavBar />   
       <Routes>
         <Route path='/' element={<ItemListContainer />} />
         <Route path='/categoria/:categoriaId' element={<ItemListContainer />} />
@@ -27,13 +30,9 @@ function App() {
         <Route path='/contacto' element={<Contacto />} />
       </Routes>
           
-
+</CartProvider>
 </BrowserRouter>
-
-
-
-      
-
+    
 
     </>
   )
