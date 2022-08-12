@@ -12,7 +12,9 @@ if (cart.length === 0) {
   return (
     <>
       <p>No hay elementos en el carrito ...</p>
-      <Link to='/'> Hacer las compras</Link>
+
+        
+      <Link to='/'> <button>Hacer las compras</button></Link>
     </>
   )
 }
@@ -32,3 +34,6 @@ if (cart.length === 0) {
 }
 
 export default Cart
+
+
+{/* <Link to='/'> Hacer las compras</Link> */}

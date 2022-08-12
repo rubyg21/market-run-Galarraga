@@ -30,7 +30,7 @@ export const  ItemDetail = ({data}) => {
                 <p> stock: {data.stock} </p>
                 <br></br>
 
-                <h2> {data.price}  </h2>
+                <h2> ${data.price}  </h2>
         <div className='goToCart' > 
             { 
              goToCart
