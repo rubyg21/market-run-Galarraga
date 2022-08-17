@@ -7,22 +7,12 @@ import Spinner from './Spinner/Spinner'
 
 import { useParams } from 'react-router-dom'
 
+import { getFirestore, collection, getDocs, query, where } from 'firebase/firestore'
 
-const productos = [
 
-  {id : 1, pictureUrl :"https://disershop.com.uy/image/cache/catalog/aadiser/productos/EL-135270-30-1000x1000.jpg", title: "Remera",
-  price: '300',  category: 'running', description: 'Ver detalles',stock: 6},
 
-  {id : 2, pictureUrl :"https://disershop.com.uy/image/cache/catalog/aadiser/productos/EL-1050-11-1000x1000.jpg", title: "Short",
-  price: '900', category: 'tennis', description: 'Ver detalles',stock: 6},
 
-  {id : 3, pictureUrl :"https://disershop.com.uy/image/cache/catalog/aadiser/productos/EL-25441-02-1000x1000.jpg", title: "Musculosa",
-  price: '600', category: 'running', description: 'Ver detalles',stock: 6},
 
-  {id : 4, pictureUrl :"https://disershop.com.uy/cache/aadiser/productos/EL-125566-04-550x550.jpg", title: "Camiseta Elite",
-  price: '398', category: 'tennis', description: 'Ver detalles',stock: 6},
-
-]
 
 function ItemListContainer({greeting}) {
 
@@ -32,15 +22,19 @@ function ItemListContainer({greeting}) {
 
   useEffect(()=>{
 
-    const getData = new Promise((resolve) => {
-      setTimeout(()=>{
-        resolve(productos)
-      },1000)
-    })
+    const querydb = getFirestore()
+    const queryCollection = collection(querydb, 'products')
+
+    
     if (categoriaId) {
-      getData.then(res => setData(res.filter(producto => producto.category === categoriaId)))
+      const queryFilter = query(queryCollection, where('category', '==', categoriaId))
+      getDocs(queryFilter)
+        .then(res => setData(res.docs.map(product => ({ id: product.id, ...product.data() }))))
+  
+
     } else{
-      getData.then(res => setData(res))
+      getDocs(queryCollection)
+      .then(res => setData(res.docs.map(product => ({ id: product.id, ...product.data() }))))
     }
     
  return () =>{
