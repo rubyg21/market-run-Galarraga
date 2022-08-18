@@ -9,12 +9,10 @@ import  { useState, useEffect } from 'react';
 const Cart = () => {
 
 const { cart, totalPrice } = useCartContext();
-
 const [name, setName] = useState('');
 const [tel, setTel] = useState('');
 const [email, setEmail] = useState('');
 const [idOrder, setIdOrder] = useState('');
-
 
 const order = {
   buyer: { name, tel, email },
@@ -32,20 +30,16 @@ const handleClick = () =>{
     setIdOrder(res.id);
   });
 
-
 }
 
 if (cart.length === 0) {
   return (
     <>
       <p>No hay elementos en el carrito ...</p>
-
-        
       <Link to='/'> <button>Hacer las compras</button></Link>
     </>
   )
 }
-
 
   return (
     <>
@@ -55,13 +49,11 @@ if (cart.length === 0) {
 
     <p>
 
-
-
       TOTAL : $ {totalPrice()}
       <br />
     </p>
     
-    <div style={{ backgroundColor: 'lightgray' }}>
+    <div >
       <input type={'text'} placeholder="nombre" value={name} onChange={(e) => setName(e.target.value)} />
       <br />
     
@@ -70,8 +62,7 @@ if (cart.length === 0) {
       
       <input type={'email'} placeholder="email" value={email} onChange={(e) => setEmail(e.target.value)} />
       <br />
-    
-      
+          
       <p>Id de tu compra es: {idOrder}</p>
       <br />
     </div>
