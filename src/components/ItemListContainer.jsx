@@ -46,7 +46,7 @@ function ItemListContainer({greeting}) {
 
   return (
     <>
-    <div className="ItemList" >{greeting='Bienvenido'} aqui el listado de nuestros productos...  </div>
+    {/* <div className="ItemList" >{greeting='Bienvenido'} aqui el listado de nuestros productos...  </div> */}
       
     {/* listado de productos resposive */}
     <div className='container'> 
