@@ -16,7 +16,6 @@
     
 }
 
-
 .ItemList:hover{
 
     color: #0087FF;
@@ -28,6 +27,8 @@
     .container{
         gap: 50px;
         padding: 40px;
+        display: flex;
         justify-content: center;
+        flex-wrap: wrap;
        }
   }

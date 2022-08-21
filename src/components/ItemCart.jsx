@@ -2,6 +2,7 @@ import React from "react";
 import './ItemCart.css'
 
 
+
 import { useCartContext } from "../context/CartContex";
 
 const ItemCart = ({ product }) => {

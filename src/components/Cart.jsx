@@ -64,6 +64,7 @@ if (cart.length === 0) {
       
       <input type={'email'} placeholder="email" value={email} onChange={(e) => setEmail(e.target.value)} />
       <br />
+   
           
 {
 
@@ -76,8 +77,10 @@ if (cart.length === 0) {
       {/* <p>Id de tu compra es: {idOrder}</p> */}
       <br />
     </div>
+    
      <button onClick={handleClick} >Emitir compra</button>
-   
+     <br />
+     <Link to='/'> <button>Seguir comprando</button></Link>
     </>
   )
 }
