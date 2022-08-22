@@ -44,6 +44,9 @@ const totalProducts = () => cart.reduce((acumulador, productoActual) => acumulad
 //
  const clearCart = () => setCart([])
 
+ //
+ const deleteAll = () => setCart([])
+
  const isInCart = (id) => cart.find(product => product.id === id) ? true : false;
 
  const removeProduct = (id) => setCart(cart.filter(product => product.id !== id))
@@ -56,7 +59,8 @@ const totalProducts = () => cart.reduce((acumulador, productoActual) => acumulad
     addProduct,
     totalPrice,
     totalProducts,
-    cart
+    cart,
+    deleteAll
    }}>
     {children}
    </CartContext.Provider>
