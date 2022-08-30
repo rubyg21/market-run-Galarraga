@@ -1,36 +1,26 @@
-.ItemList{
-    /* max-width: 100%;
-    height: 400px; */
-    /* background-image: url("https://tn.com.ar/resizer/pCs1biHlkWBnD02cewgxDt3mOw4=/1440x0/smart/cloudfront-us-east-1.images.arcpublishing.com/artear/3J5QWF3JDNC2LLXUQ4ATSH5VJI.jpg"); */
-    font-size: 2.5rem;
-    color: black;
-
+.ItemList {
+  font-size: 2.5rem;
+  color: black;
 }
 
-.container{
-  
-    /* display: flex; */
-    display: grid;
-    grid-template-columns: repeat(auto-fill, 230px);
-    gap: 30px;
-    /* padding: 30px; */
-    justify-content: center;
-    
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 230px);
+  gap: 30px;
+
+  justify-content: center;
 }
 
-.ItemList:hover{
-
-    color: #0087FF;
-
+.ItemList:hover {
+  color: #0087ff;
 }
-
 
 @media only screen and (max-width: 600px) {
-    .container{
-        gap: 50px;
-        padding: 40px;
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-       }
+  .container {
+    gap: 50px;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
   }
+}

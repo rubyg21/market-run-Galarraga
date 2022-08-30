@@ -2,8 +2,6 @@ import React from "react";
 import { useCartContext } from "../context/CartContex";
 import { Link } from "react-router-dom";
 import ItemCart from "./ItemCart";
-import { addDoc, collection, getFirestore } from "firebase/firestore";
-import { useState, useEffect } from "react";
 
 const Cart = () => {
   const { cart, totalPrice, totalProducts } = useCartContext();

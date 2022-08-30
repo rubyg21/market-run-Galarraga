@@ -1,12 +1,10 @@
-.Carrito{
-    float: right;
-    cursor: pointer;
-    color: white;
-    /* margin: 6px; */
-    padding: 7px;
-          
+.Carrito {
+  float: right;
+  cursor: pointer;
+  color: white;
+  padding: 7px;
 }
 
-.Carrito:hover{
-    color: #0087FF;
+.Carrito:hover {
+  color: #0087ff;
 }

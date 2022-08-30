@@ -1,7 +1,6 @@
 import React from "react";
 import { useCartContext } from "../context/CartContex";
 import { Link } from "react-router-dom";
-import ItemCart from "./ItemCart";
 import { addDoc, collection, getFirestore } from "firebase/firestore";
 import { useState, useEffect } from "react";
 
@@ -29,78 +28,57 @@ const Checkout = () => {
 
     addDoc(refCollection, order).then((res) => {
       setIdOrder(res.id);
-     
     });
-    clearCart()
+    clearCart();
   };
 
-//   if (cart.length === 0) {
-//     return (
-//       <>
-//         <p>No hay elementos en el carrito ...</p>
-//         <Link to="/">
-//           {" "}
-//           <button>Hacer las compras</button>
-//         </Link>
-//       </>
-//     );
-//   }
-
   return (
- <> 
+    <>
       {idOrder ? (
-        " Felicidades! Gracias por tu compra! El Id de tu compra es: " + idOrder 
-        )
-      
-      : (
+        " Felicidades! Gracias por tu compra! El Id de tu compra es: " + idOrder
+      ) : (
         <div>
-      <p>
-        Terminar compra, ingrese sus datos:
-    <br />
-      </p>
-      <div>
-        <input
-          type={"text"}
-          placeholder="nombre"
-          value={name}
-          onChange={(e) => setName(e.target.value)}
-        />
-        <br />
+          <p>
+            Terminar compra, ingrese sus datos:
+            <br />
+          </p>
+          <div>
+            <input
+              type={"text"}
+              placeholder="nombre"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+            />
+            <br />
 
-        <input
-          type={"tel"}
-          placeholder="celular"
-          value={tel}
-          onChange={(e) => setTel(e.target.value)}
-        />
-        <br />
+            <input
+              type={"tel"}
+              placeholder="celular"
+              value={tel}
+              onChange={(e) => setTel(e.target.value)}
+            />
+            <br />
 
-        <input
-          type={"email"}
-          placeholder="email"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-        />
-        <br />
+            <input
+              type={"email"}
+              placeholder="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+            />
+            <br />
 
-        <br />
-      </div>
-      <button onClick={handleClick}>Finalizar compra</button>
-      <br />
-      <Link to="/">
-        {" "}
-        <button>Seguir comprando</button>
-      </Link> 
-      
-      </div>
-      
-    
-   )}
-
-   </>
-   )
-}
- 
-
+            <br />
+          </div>
+          <button onClick={handleClick}>Finalizar compra</button>
+          <br />
+          <Link to="/">
+            {" "}
+            <button>Seguir comprando</button>
+          </Link>
+        </div>
+      )}
+    </>
+  );
+};
 
 export default Checkout;
