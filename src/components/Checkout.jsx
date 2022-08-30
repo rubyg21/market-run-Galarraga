@@ -3,6 +3,7 @@ import { useCartContext } from "../context/CartContex";
 import { Link } from "react-router-dom";
 import { addDoc, collection, getFirestore } from "firebase/firestore";
 import { useState, useEffect } from "react";
+import "./Checkout.css";
 
 const Checkout = () => {
   const { cart, totalPrice, clearCart } = useCartContext();
@@ -39,10 +40,10 @@ const Checkout = () => {
       ) : (
         <div>
           <p>
-            Terminar compra, ingrese sus datos:
+            Ya casi terminas, ingrese sus datos para completar la compra!
             <br />
           </p>
-          <div>
+          <div className="form">
             <input
               type={"text"}
               placeholder="nombre"
@@ -69,12 +70,14 @@ const Checkout = () => {
 
             <br />
           </div>
-          <button onClick={handleClick}>Finalizar compra</button>
-          <br />
-          <Link to="/">
-            {" "}
-            <button>Seguir comprando</button>
-          </Link>
+          <div className="btn">
+            <button onClick={handleClick}>Finalizar compra</button>
+           
+            <Link to="/">
+              {" "}
+              <button>Seguir comprando</button>
+            </Link>
+          </div>
         </div>
       )}
     </>

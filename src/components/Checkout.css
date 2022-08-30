@@ -1,0 +1,30 @@
+input[type="text"] {
+  padding: 12px 25px;
+  margin: 8px 8px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 1px;
+  background-color: #f8f8f8;
+}
+
+input[type="tel"] {
+  padding: 12px 25px;
+  margin: 8px 8px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 1px;
+  background-color: #f8f8f8;
+}
+
+input[type="email"] {
+  padding: 12px 25px;
+  margin: 8px 8px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 1px;
+  background-color: #f8f8f8;
+}
+
+.btn {
+  margin: 8px 8px;
+}
