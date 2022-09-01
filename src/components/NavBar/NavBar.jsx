@@ -13,11 +13,7 @@ function NavBar() {
         </NavLink>
 
         <li>
-          <a>TU LOGO</a>
-        </li>
-
-        <li>
-          <NavLink to="/">Inicio</NavLink>
+          <NavLink to="/">Tienda</NavLink>
         </li>
 
         <li>
