@@ -1,13 +1,14 @@
 .ItemList {
   font-size: 2.5rem;
   color: black;
+  
+ 
 }
 
 .container {
   display: grid;
   grid-template-columns: repeat(auto-fill, 230px);
-  gap: 30px;
-
+  gap: 20px;
   justify-content: center;
 }
 
