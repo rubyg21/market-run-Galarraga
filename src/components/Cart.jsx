@@ -2,6 +2,10 @@ import React from "react";
 import { useCartContext } from "../context/CartContex";
 import { Link } from "react-router-dom";
 import ItemCart from "./ItemCart";
+import { MdOutlineSentimentVeryDissatisfied } from "react-icons/md";
+import './Cart.css'
+
+
 
 const Cart = () => {
   const { cart, totalPrice, totalProducts } = useCartContext();
@@ -9,11 +13,15 @@ const Cart = () => {
   if (cart.length === 0) {
     return (
       <>
-        <p>No hay elementos en el carrito ...</p>
+<div className="ncarrito" >
+<p>No hay elementos en el carrito ...</p>
+        <MdOutlineSentimentVeryDissatisfied size="5rem" />
+        <br></br>
         <Link to="/">
           {" "}
-          <button>Hacer las compras</button>
+          <button>Ver productos</button>
         </Link>
+</div>
       </>
     );
   }

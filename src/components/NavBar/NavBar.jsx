@@ -13,7 +13,7 @@ function NavBar() {
         </NavLink>
 
         <li>
-          <NavLink to="/">Tienda</NavLink>
+          <NavLink to="/"> SPORT-890 </NavLink>
         </li>
 
         <li>
