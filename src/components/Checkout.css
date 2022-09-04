@@ -1,5 +1,4 @@
-
-.form{
+.form {
   margin: 0 auto;
   align-items: center;
 }
@@ -13,7 +12,7 @@ input[type="text"] {
 
 input[type="tel"] {
   padding: 12px 25px;
-  margin: 8px ;
+  margin: 8px;
   border: 1px solid #ccc;
   background-color: #f8f8f8;
 }
@@ -25,21 +24,20 @@ input[type="email"] {
   background-color: #f8f8f8;
 }
 
-
 .btn {
   margin: 8px 8px;
 }
 .incorrecto {
   border: 1px solid red !important;
-  color: red; }
+  color: red;
+}
 
 .order {
-    margin-top: 10px;
-    text-align: center; 
-    font-size: 18px;
-  }
+  margin-top: 10px;
+  text-align: center;
+  font-size: 18px;
+}
 
-  h6{
-  
-    margin: 8px;
-  }
+h6 {
+  margin: 8px;
+}

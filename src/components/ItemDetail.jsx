@@ -44,4 +44,3 @@ export const ItemDetail = ({ data }) => {
 };
 
 export default ItemDetail;
-
