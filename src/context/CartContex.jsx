@@ -20,6 +20,7 @@ const CartProvider = ({ children }) => {
           ? { ...product, quantity: product.quantity + quantity }
           : product;
       });
+
       setCart(newCart);
       localStorage.setItem("cart", JSON.stringify(newCart));
     } else {
