@@ -56,12 +56,11 @@ const Checkout = () => {
       errormail.current.classList.add("incorrecto");
       errorMailMsg.current.classList.remove("hide");
       setDatosValidosEmail(false);
-      // console.log(datosValidosEmail);
     } else {
       errormail.current.classList.remove("incorrecto");
       errorMailMsg.current.classList.add("hide");
       setDatosValidosEmail(true);
-      // console.log(datosValidosEmail);
+
       return true;
     }
   };
